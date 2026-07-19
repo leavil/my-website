@@ -1,5 +1,7 @@
 import ParticlesBackground from "@/components/ParticlesBackground";
 import { Button } from "@/components/ui/button";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -32,11 +34,8 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Spacer para probar el scroll */}
-      <section className="h-screen w-full flex flex-col items-center justify-center relative z-10 bg-black/40 backdrop-blur-sm border-t border-white/5">
-        <h2 className="text-4xl text-white mb-4">Aquí irán las Habilidades y Proyectos</h2>
-        <p className="text-slate-400">Pronto con animaciones 3D y GSAP</p>
-      </section>
+      <Skills />
+      <Projects />
     </main>
   );
 }
